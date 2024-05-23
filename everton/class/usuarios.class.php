@@ -4,12 +4,19 @@ class usuarios{
 	private $nome;
 	private $email;
 	private $senha;
+	private $imagem;
 	
 	public function getId(){
 		return $this->id;
 	}
 	public function setId($value){
 		$this->id=$value;
+	}	
+	public function getImagem(){
+		return $this->imagem;
+	}
+	public function setImagem($value){
+		$this->imagem=$value;
 	}	
 	public function getNome(){
 		return $this->nome;

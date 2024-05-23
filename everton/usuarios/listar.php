@@ -22,6 +22,8 @@
 				<th>ID</th>
 				<th>Nome</th>
 				<th>Email</th>
+				<th>Foto</th>
+				<th colspan="2">Ações</th>
 			</thead>
 			<tbody>
 			<?php
@@ -31,6 +33,7 @@
 					<td>".$linha['id']."</td>
 					<td>".$linha['nome']."</td>
 					<td>".$linha['email']."</td>
+					<td><img src='imagens/".$linha['imagem']."' width='100'/></td>
 					<td><a href='editar.php?id=".$linha['id']."'>Editar</a></td>
 					<td><a href='excluir.php?id=".$linha['id']."'>Excluir</a></td>
 				</tr>";
